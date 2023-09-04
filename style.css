@@ -1,0 +1,148 @@
+/* Body */
+body {
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Jumbotron */
+.jumbotron img {
+    width: 25%;
+}
+
+/* Section */
+section {
+    min-height: 420px;
+}
+
+/* Footer */
+footer {
+    min-height: 50px;
+    padding-top: 12px;
+}
+
+/* Instagram Thumbnail */
+.ig-thumbnail {
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.ig-thumbnail img {
+    width: 100;
+}
+
+/* About Paragraph Animation */
+.aboutPar {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#about:hover .aboutPar {
+    opacity: 0.8;
+}
+
+/* Contact Images Hover Effect */
+.contactImg {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contactImg:hover {
+    transform: scale(1.1);
+}
+
+/* Image Row */
+.image-row > div {
+    margin-right: 50px;
+}
+
+.image-row > div:last-child {
+    margin-right: 0;
+}
+
+/* Card Hover Effect */
+/* .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+} */
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #28a745;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+.dropdown-item {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    color: #28a745;
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Certification Images Hover Effect */
+.cer_img {
+    transition: transform 0.3s ease-in-out;
+    height: 147.95px;
+    width: 255px;
+}
+
+.cer_img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the About Section */
+.aboutPar {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.aboutPar:hover {
+    opacity: 0.8;
+}
+
+.footext {
+    font-weight: 500;
+}
+
+/* Add font-weight to card titles, skills, and tools in the Projects section */
+.card-title,
+.card-body h6 {
+    font-weight: bold;
+}
